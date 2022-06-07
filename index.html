@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button class="sidebar__close"><img src="./images/icon-close-menu.svg" alt="close"></button>
+      <div class="sidebar__btns">
+        <ul class="sidebar__content">
+          <li>
+            <span class="sidebar__feature">Features <img class="sidebarFeatureArrow" src="./images/icon-arrow-down.svg" alt="down"></span>
+            <ul class="feature-drop">
+              <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="calendar"> Calendar</li>
+              <li><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</li>
+              <li><img src="./images/icon-planning.svg" alt="planning"> Planning</li>
+            </ul>
+          </li>
+          <li>
+            <span class="sidebar__company">Company <img class="sidebarCompanyArrow" src="./images/icon-arrow-down.svg" alt="down"></span>
+            <ul class="company-drop">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="sidebar__auth">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar -->
+
+    <div class="container">
+      <div class="subcontainer">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <img class="logo" src="./images/logo.svg" alt="logo">
+            <button class="burger"><img src="./images/icon-menu.svg" alt="burger"></button>
+            <ul class="navbar__btns">
+              <li>
+                <span class="feature-btn">Features <img class="featureArrow" src="./images/icon-arrow-down.svg" alt="down"></span>
+                <ul class="features">
+                  <li><img src="./images/icon-todo.svg" alt="todo"> Todo List</li>
+                  <li><img src="./images/icon-calendar.svg" alt="calendar"> Calendar</li>
+                  <li><img src="./images/icon-reminders.svg" alt="reminders"> Reminders</li>
+                  <li><img src="./images/icon-planning.svg" alt="planning"> Planning</li>
+                </ul>
+              </li>
+              <li>
+                <span class="company-btn">Company <img class="companyArrow" src="./images/icon-arrow-down.svg" alt="down"></span>
+                <ul class="company">
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </li>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div class="navbar__auth navbar--auth">
+            <a href="#" class="auth__login">Login</a>
+            <a href="#" class="auth__register">Register</a>
+          </div>
+        </nav>
+        <main>
+          <div class="remote">
+            <article class="content">
+              <h1 class="content__title">Make remote work</h1>
+              <p class="content__desc">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+              <button class="content__btn">Learn more</button>
+            </article>
+            <div class="client">
+              <img src="./images/client-databiz.svg" alt="databiz">
+              <img src="./images/client-audiophile.svg" alt="audiophile">
+              <img src="./images/client-meet.svg" alt="meet">
+              <img src="./images/client-maker.svg" alt="maker">
+            </div>
+          </div>
+          <div class="hero">
+            <img class="hero__desktop" src="./images/image-hero-desktop.png" alt="hero desktop">
+            <img class="hero__mobile" src="./images/image-hero-mobile.png" alt="hero mobile">
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./index.js"></script>
+</body>
+</html>
